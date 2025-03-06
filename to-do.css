@@ -1,0 +1,88 @@
+body {
+  font-family: arial;
+  background-color: lightsteelblue;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
+  margin-inline: 150px;
+  background-color: steelblue;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding-block: 15px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.input-grid,
+.todo-grid {
+  display: grid;
+  grid-template-columns: 1fr 120px 20px;
+  column-gap: 10px;
+  row-gap: 10px;
+  align-items: center;
+  margin-inline: 10px;
+}
+
+.todo-grid {
+  margin-bottom: 10px;
+  color: rgb(45, 45, 45);
+}
+
+.input-grid {
+  margin-bottom: 10px;
+}
+
+.name-input,
+.date-input {
+  font-size: 15px;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+}
+
+button {
+  border: none;
+  height: 24px;
+  width: 24px;
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.add-button {
+  background-color: rgb(33, 77, 35);
+}
+
+.delete-button {
+  background-color: rgb(114, 34, 34);
+}
+
+.task-checkbox {
+  margin-right: 10px;
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  border: 2px solid grey;
+}
+
+.task-elements {
+  display: flex;
+  align-items: center;
+}
+
+.date-elements {
+  margin-left: 18px;
+}
