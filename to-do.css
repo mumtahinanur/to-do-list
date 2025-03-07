@@ -1,6 +1,6 @@
 body {
   font-family: arial;
-  background-color: lightsteelblue;
+  background-color: #f3e8ff;
   display: flex;
   justify-content: center;
 }
@@ -12,17 +12,20 @@ body {
   justify-content: center;
   margin-top: 100px;
   margin-inline: 150px;
-  background-color: steelblue;
+  background-color: white;
   border-radius: 10px;
   overflow: hidden;
+  box-shadow: 0px 5px 15px rgba(82, 82, 82, 0.2);
 }
 
 .header {
   display: flex;
   justify-content: center;
-  padding-block: 15px;
-  color: white;
-  margin-bottom: 5px;
+  padding-block: 25px;
+}
+
+.title {
+  margin: 0;
 }
 
 .input-grid,
@@ -48,8 +51,13 @@ body {
 .date-input {
   font-size: 15px;
   padding: 8px;
-  border: none;
+  border: 1px solid rgb(180, 180, 180);
   border-radius: 8px;
+  color: grey;
+}
+
+.date-input::-webkit-calendar-picker-indicator {
+  filter: invert(0.5);
 }
 
 button {
@@ -63,11 +71,11 @@ button {
 }
 
 .add-button {
-  background-color: rgb(33, 77, 35);
+  background-color: #6d28d9;
 }
 
 .delete-button {
-  background-color: rgb(114, 34, 34);
+  background-color: rgb(138, 55, 124);
 }
 
 .task-checkbox {
